@@ -17,7 +17,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyANSohjLsyW7phacOUzzRnCoMAV3KrYIK4" />
+            android:value="${API_KEY}" />
 
         <activity
             android:name=".MainActivity"
@@ -47,10 +47,6 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
-
-    <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false" />
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
          https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
