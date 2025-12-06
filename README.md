@@ -57,22 +57,39 @@ iOS: See iOS_SETUP.md (add location descriptions to Info.plist)
 📁 Project Structure
 text
 lib/
+
 ├── main.dart                    # App entry & Provider setup
+
 ├── core/
+
 │   ├── constants.dart          # Configuration
+
 │   └── theme.dart              # Themes
+
 ├── models/
+
 │   └── location_model.dart     # Location data model
+
 ├── services/
+
 │   ├── location_service.dart   # Geolocator & Geocoding
+
 │   └── permission_service.dart # Permissions
+
 ├── viewmodels/
+
 │   └── location_viewmodel.dart # Business logic
+
 ├── views/
+
 │   ├── location_screen.dart    # Main screen
+
 │   └── widgets/                # UI components
+
 └── utils/
+
     └── date_formatter.dart     # Utilities
+    
 🎯 Key Features Explained
 Permission Handling: Requests both fine (GPS) and coarse (city-level) location permissions with user-friendly dialogs and fallback options.
 
